@@ -199,7 +199,10 @@
     </style>
 </head>
 <body>
-
+<?php 
+// $loadGame = new GameController;
+// $loadGame->createDatabase();
+?>
 <!-- HEADER: MENU + HEROE SECTION -->
 <header>
 
