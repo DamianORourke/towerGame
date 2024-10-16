@@ -1,6 +1,16 @@
 # towerGame
 Tower Game
 
+# SQL
+CREATE DATABASE IF NOT EXISTS hanoi_game;
+
+USE hanoi_game;
+
+CREATE TABLE IF NOT EXISTS games (
+    game_id INT AUTO_INCREMENT PRIMARY KEY,
+    state TEXT NOT NULL
+);
+
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
