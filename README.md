@@ -1,6 +1,10 @@
 # towerGame
 Tower Game
 
+
+
+Set up db with the following:
+
 # SQL
 CREATE DATABASE IF NOT EXISTS hanoi_game;
 
