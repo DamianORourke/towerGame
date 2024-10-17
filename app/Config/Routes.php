@@ -31,6 +31,7 @@ $routes->setAutoRoute(false);
 
  $routes->get('/tower', 'TowerGameController::showNewGameForm');
  $routes->post('tower/new', 'TowerGameController::newGame');
+ $routes->post( 'tower/restart', 'TowerGameController::restartGame' );
  $routes->post('tower/move/(:num)', 'TowerGameController::moveDisk/$1');
  
 
@@ -41,8 +42,8 @@ $routes->group('api', function ($routes) {
 });
 
 // Routes for new game view and game creation
-$routes->get('tower/new', 'TowerGameController::showNewGameForm');
-$routes->post('tower/new', 'TowerGameController::newGame');
+// $routes->get('tower/new', 'TowerGameController::showNewGameForm');
+// $routes->post('tower/new', 'TowerGameController::newGame');
 
 /*
  * --------------------------------------------------------------------

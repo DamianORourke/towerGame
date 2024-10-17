@@ -140,9 +140,9 @@
                     </button>
                     <ul class="dropdown-menu">
                     <li class="fw-bold text-end pe-2">Restart Game!</li>
-                    <form action="/tower/new" method="post">
-                        <li class="float-end pe-2"><button type="submit" class="btn btn-success">Start Again!</button></li>
-                        </form>
+                    <form action="/tower/restart" method="post">
+                        <li class="float-end pe-2"><button type="submit" class="btn btn-outline-warning">Start Again!</button></li>
+                    </form>
                     </ul>
                 </div>
             </div>
@@ -205,6 +205,15 @@
             <!-- Start New Game Button -->
             <p>Click the button below to start a new Tower of Hanoi game.</p>
             <form action="/tower/new" method="post">
+                <div class="mb-3">
+                    <select class="form-select" name="difficulty" id="difficulty">
+                        <option value="3">3 Disks</option>
+                        <option value="4">4 Disks</option>
+                        <option value="5">5 Disks</option>
+                        <option value="6">6 Disks</option>
+                        <option value="7">7 Disks</option>
+                    </select>
+                </div>                
                 <button type="submit" class="btn btn-primary">Start New Game</button>
             </form>
         <?php endif; ?>
