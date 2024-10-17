@@ -16,6 +16,8 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * Router Setup
  * --------------------------------------------------------------------
  */
+
+$routes->get('/', 'TowerGameController::showNewGameForm' );
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('TowerGameController');
 $routes->setDefaultMethod('showNewGameForm'); // Set the default method to load the new game view
